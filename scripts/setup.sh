@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Setting up PeopleOS for local development..."
+echo "🚀 Setting up BiggWork for local development..."
 
 # Check if PostgreSQL is running
 if ! pg_isready -q; then
@@ -37,7 +37,7 @@ npx prisma generate
 # Run database migrations
 echo "🗄️  Setting up database..."
 echo "Note: If database doesn't exist, create it first:"
-echo "  createdb peopleos"
+echo "  createdb biggwork"
 echo ""
 read -p "Press enter to continue with migration (or Ctrl+C to cancel)..."
 npx prisma migrate dev --name init

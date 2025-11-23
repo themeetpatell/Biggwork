@@ -14,7 +14,7 @@ export default function Onboarding() {
   }, [])
 
   const loadData = async () => {
-    const saved = localStorage.getItem('peopleos_company')
+    const saved = localStorage.getItem('biggwork_company')
     if (saved) {
       const companyData = JSON.parse(saved)
       const scanner = new DNAScanner()
@@ -24,7 +24,7 @@ export default function Onboarding() {
   }
 
   const loadOnboardingPlans = () => {
-    const saved = localStorage.getItem('peopleos_onboarding')
+    const saved = localStorage.getItem('biggwork_onboarding')
     if (saved) {
       setOnboardingPlans(JSON.parse(saved))
     } else {
@@ -45,7 +45,7 @@ export default function Onboarding() {
         })),
       }]
       setOnboardingPlans(plans)
-      localStorage.setItem('peopleos_onboarding', JSON.stringify(plans))
+      localStorage.setItem('biggwork_onboarding', JSON.stringify(plans))
     }
   }
 
@@ -75,7 +75,7 @@ export default function Onboarding() {
     }))
     
     setOnboardingPlans(recalculated)
-    localStorage.setItem('peopleos_onboarding', JSON.stringify(recalculated))
+    localStorage.setItem('biggwork_onboarding', JSON.stringify(recalculated))
   }
 
   const completeCheckpoint = (planId, checkpointDay) => {
@@ -89,7 +89,7 @@ export default function Onboarding() {
     })
     
     setOnboardingPlans(updated)
-    localStorage.setItem('peopleos_onboarding', JSON.stringify(updated))
+    localStorage.setItem('biggwork_onboarding', JSON.stringify(updated))
   }
 
   return (

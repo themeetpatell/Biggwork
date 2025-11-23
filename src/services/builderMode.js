@@ -70,12 +70,12 @@ export class BuilderMode {
   }
 
   loadProgress() {
-    const saved = localStorage.getItem('peopleos_builder_progress')
+    const saved = localStorage.getItem('biggwork_builder_progress')
     return saved ? JSON.parse(saved) : {}
   }
 
   saveProgress() {
-    localStorage.setItem('peopleos_builder_progress', JSON.stringify(this.progress))
+    localStorage.setItem('biggwork_builder_progress', JSON.stringify(this.progress))
   }
 
   getModules() {

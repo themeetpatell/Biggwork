@@ -4,12 +4,12 @@ export class ExitIntelligence {
   }
 
   loadExitHistory() {
-    const saved = localStorage.getItem('peopleos_exits')
+    const saved = localStorage.getItem('biggwork_exits')
     return saved ? JSON.parse(saved) : []
   }
 
   saveExitHistory() {
-    localStorage.setItem('peopleos_exits', JSON.stringify(this.exitHistory))
+    localStorage.setItem('biggwork_exits', JSON.stringify(this.exitHistory))
   }
 
   predictExitRisk(employeeData, companyDNA) {

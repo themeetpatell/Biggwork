@@ -53,7 +53,7 @@ app.use(errorHandler);
 
 // Start server
 const server = app.listen(PORT, () => {
-  logger.info(`🚀 PeopleOS API server running on port ${PORT}`);
+  logger.info(`🚀 BiggWork API server running on port ${PORT}`);
 });
 
 // Handle errors

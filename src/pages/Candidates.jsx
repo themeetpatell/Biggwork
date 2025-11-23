@@ -33,7 +33,7 @@ export default function Candidates() {
   }, [])
 
   const loadData = async () => {
-    const saved = localStorage.getItem('peopleos_company')
+    const saved = localStorage.getItem('biggwork_company')
     if (saved) {
       const companyData = JSON.parse(saved)
       const scanner = new DNAScanner()
@@ -43,7 +43,7 @@ export default function Candidates() {
   }
 
   const loadCandidates = () => {
-    const saved = localStorage.getItem('peopleos_candidates')
+    const saved = localStorage.getItem('biggwork_candidates')
     if (saved) {
       setCandidates(JSON.parse(saved))
     } else {
@@ -102,7 +102,7 @@ export default function Candidates() {
         },
       ]
       setCandidates(defaultCandidates)
-      localStorage.setItem('peopleos_candidates', JSON.stringify(defaultCandidates))
+      localStorage.setItem('biggwork_candidates', JSON.stringify(defaultCandidates))
     }
   }
 
@@ -118,7 +118,7 @@ export default function Candidates() {
         : c
     )
     setCandidates(updated)
-    localStorage.setItem('peopleos_candidates', JSON.stringify(updated))
+    localStorage.setItem('biggwork_candidates', JSON.stringify(updated))
   }
 
   const updateCandidateStatus = (candidateId, newStatus) => {
@@ -126,7 +126,7 @@ export default function Candidates() {
       c.id === candidateId ? { ...c, status: newStatus } : c
     )
     setCandidates(updated)
-    localStorage.setItem('peopleos_candidates', JSON.stringify(updated))
+    localStorage.setItem('biggwork_candidates', JSON.stringify(updated))
   }
 
   const filteredCandidates = candidates.filter(c => {

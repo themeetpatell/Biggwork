@@ -4,12 +4,12 @@ export class AlumniNetwork {
   }
 
   loadAlumni() {
-    const saved = localStorage.getItem('peopleos_alumni')
+    const saved = localStorage.getItem('biggwork_alumni')
     return saved ? JSON.parse(saved) : []
   }
 
   saveAlumni() {
-    localStorage.setItem('peopleos_alumni', JSON.stringify(this.alumni))
+    localStorage.setItem('biggwork_alumni', JSON.stringify(this.alumni))
   }
 
   addAlumni(employeeData, exitData) {

@@ -83,8 +83,8 @@ export default function AICopilotPage() {
 
   const loadContext = () => {
     // Load context from localStorage
-    const companyData = localStorage.getItem('peopleos_company')
-    const candidates = localStorage.getItem('peopleos_candidates')
+    const companyData = localStorage.getItem('biggwork_company')
+    const candidates = localStorage.getItem('biggwork_candidates')
     
     if (companyData) {
       const company = JSON.parse(companyData)

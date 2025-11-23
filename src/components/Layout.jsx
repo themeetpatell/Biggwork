@@ -174,7 +174,7 @@ export default function Layout({ children }) {
                   <Dna className="h-5 w-5 text-white" />
                 </div>
                 <span className="text-xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent hidden sm:block">
-                  PeopleOS
+                  BiggWork
                 </span>
               </Link>
             </div>

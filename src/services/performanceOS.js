@@ -4,7 +4,7 @@ export class PerformanceOS {
   }
 
   loadPerformanceData() {
-    const saved = localStorage.getItem('peopleos_performance')
+    const saved = localStorage.getItem('biggwork_performance')
     return saved ? JSON.parse(saved) : {
       employees: [],
       goals: [],
@@ -14,7 +14,7 @@ export class PerformanceOS {
   }
 
   savePerformanceData() {
-    localStorage.setItem('peopleos_performance', JSON.stringify(this.performanceData))
+    localStorage.setItem('biggwork_performance', JSON.stringify(this.performanceData))
   }
 
   addEmployee(employeeData) {

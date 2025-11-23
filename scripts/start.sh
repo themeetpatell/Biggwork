@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Starting PeopleOS..."
+echo "🚀 Starting BiggWork..."
 
 # Kill any existing processes
 lsof -ti:3000,3001 | xargs kill -9 2>/dev/null
@@ -12,7 +12,7 @@ if [ ! -f "backend/.env" ]; then
     cat > backend/.env << EOF
 PORT=3001
 NODE_ENV=development
-DATABASE_URL="postgresql://peopleos:peopleos@localhost:5432/peopleos?schema=public"
+DATABASE_URL="postgresql://biggwork:biggwork@localhost:5432/biggwork?schema=public"
 CORS_ORIGIN="http://localhost:3000"
 EOF
 fi
@@ -40,7 +40,7 @@ FRONTEND_PID=$!
 cd ..
 
 echo ""
-echo "✅ PeopleOS is starting..."
+echo "✅ BiggWork is starting..."
 echo "📊 Backend PID: $BACKEND_PID"
 echo "📊 Frontend PID: $FRONTEND_PID"
 echo ""

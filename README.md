@@ -1,4 +1,4 @@
-# PeopleOS - Adaptive Talent Intelligence Platform
+# BiggWork - Adaptive Talent Intelligence Platform
 
 **🎉 Now 100x Better! Enterprise-grade, beautifully designed, fully functional platform.**
 
@@ -52,7 +52,7 @@ Open http://localhost:3000 to experience the transformation!
 ## 📁 Project Structure
 
 ```
-PeopleOS/
+BiggWork/
 ├── src/
 │   ├── pages/          # All feature pages
 │   │   ├── Home.jsx

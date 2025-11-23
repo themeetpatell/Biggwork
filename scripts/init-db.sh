@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "🗄️  Initializing PeopleOS database..."
+echo "🗄️  Initializing BiggWork database..."
 
 # Check if database exists
-if psql -lqt | cut -d \| -f 1 | grep -qw peopleos; then
-    echo "✅ Database 'peopleos' already exists"
+if psql -lqt | cut -d \| -f 1 | grep -qw biggwork; then
+    echo "✅ Database 'biggwork' already exists"
 else
-    echo "📦 Creating database 'peopleos'..."
-    createdb peopleos || {
+    echo "📦 Creating database 'biggwork'..."
+    createdb biggwork || {
         echo "❌ Failed to create database. Make sure PostgreSQL is running and you have permissions."
         exit 1
     }

@@ -29,7 +29,7 @@ export default function ExitIntelligencePage() {
   }, [])
 
   const loadEmployees = () => {
-    const saved = localStorage.getItem('peopleos_employees')
+    const saved = localStorage.getItem('biggwork_employees')
     const employeesData = saved ? JSON.parse(saved) : [
       { id: '1', name: 'John Doe', role: 'Senior Engineer', tenure: 8, alignmentScore: 75, engagementScore: 70 },
       { id: '2', name: 'Jane Smith', role: 'Product Manager', tenure: 3, alignmentScore: 45, engagementScore: 40, roleMismatch: true },
@@ -47,7 +47,7 @@ export default function ExitIntelligencePage() {
   }
 
   const analyzeExitRisk = (employee) => {
-    const companyDNA = JSON.parse(localStorage.getItem('peopleos_company') || '{}')
+    const companyDNA = JSON.parse(localStorage.getItem('biggwork_company') || '{}')
     const risk = exitService.predictExitRisk(employee, companyDNA)
     setExitRisk(risk)
     setSelectedEmployee(employee)

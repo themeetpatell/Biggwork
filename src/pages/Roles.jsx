@@ -34,7 +34,7 @@ export default function Roles() {
   }, [])
 
   const loadDNA = async () => {
-    const saved = localStorage.getItem('peopleos_company')
+    const saved = localStorage.getItem('biggwork_company')
     if (saved) {
       const companyData = JSON.parse(saved)
       const scanner = new DNAScanner()
@@ -44,14 +44,14 @@ export default function Roles() {
   }
 
   const loadRoles = () => {
-    const saved = localStorage.getItem('peopleos_roles')
+    const saved = localStorage.getItem('biggwork_roles')
     if (saved) {
       setRoles(JSON.parse(saved))
     }
   }
 
   const loadTeam = () => {
-    const saved = localStorage.getItem('peopleos_team')
+    const saved = localStorage.getItem('biggwork_team')
     if (saved) {
       setCurrentTeam(JSON.parse(saved))
     } else {
@@ -60,7 +60,7 @@ export default function Roles() {
         { name: 'CTO', role: 'CTO', skills: ['engineering', 'architecture'], load: 0.8, critical: true },
       ]
       setCurrentTeam(defaultTeam)
-      localStorage.setItem('peopleos_team', JSON.stringify(defaultTeam))
+      localStorage.setItem('biggwork_team', JSON.stringify(defaultTeam))
     }
   }
 
@@ -93,7 +93,7 @@ export default function Roles() {
     
     const updated = [...roles, newRole]
     setRoles(updated)
-    localStorage.setItem('peopleos_roles', JSON.stringify(updated))
+    localStorage.setItem('biggwork_roles', JSON.stringify(updated))
     setShowForm(false)
     setFormData({ title: '', department: '', priority: 'medium' })
   }

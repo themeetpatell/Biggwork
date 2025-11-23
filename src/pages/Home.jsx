@@ -108,7 +108,7 @@ export default function Home() {
               </Badge>
               <h1 className="text-6xl md:text-7xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-primary-600 via-secondary-600 to-success-600 bg-clip-text text-transparent">
-                  PeopleOS
+                  BiggWork
                 </span>
               </h1>
               <p className="text-3xl font-semibold text-gray-800 mb-4">
@@ -179,7 +179,7 @@ export default function Home() {
               <Award className="h-16 w-16 mx-auto mb-6 animate-bounce-slow" />
               <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Hiring?</h2>
               <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Join leading startups using PeopleOS to build exceptional teams with AI-powered intelligence
+                Join leading startups using BiggWork to build exceptional teams with AI-powered intelligence
               </p>
               <Button 
                 variant="secondary" 

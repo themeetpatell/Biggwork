@@ -22,7 +22,7 @@ export default function Interviews() {
   }, [])
 
   const loadInterviews = () => {
-    const saved = localStorage.getItem('peopleos_interviews')
+    const saved = localStorage.getItem('biggwork_interviews')
     if (saved) {
       setInterviews(JSON.parse(saved))
     } else {
@@ -66,7 +66,7 @@ export default function Interviews() {
         },
       ]
       setInterviews(defaultInterviews)
-      localStorage.setItem('peopleos_interviews', JSON.stringify(defaultInterviews))
+      localStorage.setItem('biggwork_interviews', JSON.stringify(defaultInterviews))
     }
   }
 
@@ -75,7 +75,7 @@ export default function Interviews() {
       i.id === interview.id ? interview : i
     )
     setInterviews(updated)
-    localStorage.setItem('peopleos_interviews', JSON.stringify(updated))
+    localStorage.setItem('biggwork_interviews', JSON.stringify(updated))
   }
 
   const updateQuestionAnswer = (interviewId, questionId, answer) => {

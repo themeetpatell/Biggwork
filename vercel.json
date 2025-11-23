@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "peopleos",
+  "name": "biggwork",
   "builds": [
     {
       "src": "package.json",
@@ -24,4 +24,5 @@
     "NODE_ENV": "production"
   }
 }
+
 

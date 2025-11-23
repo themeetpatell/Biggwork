@@ -78,8 +78,8 @@ class ErrorBoundary extends Component {
 
               <p className="text-sm text-gray-500 mt-6">
                 If this problem persists, please contact support at{' '}
-                <a href="mailto:support@peopleos.com" className="text-primary-600 hover:underline">
-                  support@peopleos.com
+                <a href="mailto:support@biggwork.com" className="text-primary-600 hover:underline">
+                  support@biggwork.com
                 </a>
               </p>
             </div>

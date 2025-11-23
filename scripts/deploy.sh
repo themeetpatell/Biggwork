@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Deploying PeopleOS..."
+echo "🚀 Deploying BiggWork..."
 
 # Check Node.js version
 node_version=$(node --version | cut -d'v' -f2 | cut -d'.' -f1)
@@ -21,11 +21,11 @@ cd ..
 
 # Check if database exists
 echo "🗄️  Checking database..."
-if ! psql -lqt | cut -d \| -f 1 | grep -qw peopleos; then
-    echo "⚠️  Database 'peopleos' not found. Creating..."
-    createdb peopleos || {
+if ! psql -lqt | cut -d \| -f 1 | grep -qw biggwork; then
+    echo "⚠️  Database 'biggwork' not found. Creating..."
+    createdb biggwork || {
         echo "❌ Failed to create database. Please create it manually:"
-        echo "   createdb peopleos"
+        echo "   createdb biggwork"
         exit 1
     }
 fi

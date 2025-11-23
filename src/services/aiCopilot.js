@@ -4,12 +4,12 @@ export class AICopilot {
   }
 
   loadHistory() {
-    const saved = localStorage.getItem('peopleos_copilot_history')
+    const saved = localStorage.getItem('biggwork_copilot_history')
     return saved ? JSON.parse(saved) : []
   }
 
   saveHistory() {
-    localStorage.setItem('peopleos_copilot_history', JSON.stringify(this.conversationHistory))
+    localStorage.setItem('biggwork_copilot_history', JSON.stringify(this.conversationHistory))
   }
 
   async askQuestion(question, context = {}) {
@@ -55,7 +55,7 @@ export class AICopilot {
   }
 
   generateHiringRecommendation(question, context) {
-    const companyDNA = JSON.parse(localStorage.getItem('peopleos_company') || '{}')
+    const companyDNA = JSON.parse(localStorage.getItem('biggwork_company') || '{}')
     
     return {
       type: 'recommendation',
@@ -100,7 +100,7 @@ I can help you generate a job description based on your company DNA. Would you l
   }
 
   generateCompensationAdvice(question, context) {
-    const companyDNA = JSON.parse(localStorage.getItem('peopleos_company') || '{}')
+    const companyDNA = JSON.parse(localStorage.getItem('biggwork_company') || '{}')
     const stage = companyDNA.stage || 'seed'
     
     return {

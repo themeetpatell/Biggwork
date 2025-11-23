@@ -4,7 +4,7 @@ export class CulturePulse {
   }
 
   loadPulseData() {
-    const saved = localStorage.getItem('peopleos_culture_pulse')
+    const saved = localStorage.getItem('biggwork_culture_pulse')
     if (saved) return JSON.parse(saved)
 
     return {
@@ -95,7 +95,7 @@ export class CulturePulse {
   }
 
   savePulseData() {
-    localStorage.setItem('peopleos_culture_pulse', JSON.stringify(this.pulseData))
+    localStorage.setItem('biggwork_culture_pulse', JSON.stringify(this.pulseData))
   }
 
   getOverallHealth() {

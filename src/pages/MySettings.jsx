@@ -58,7 +58,7 @@ export default function MySettings() {
         <h1 className="text-4xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent mb-3">
           My Settings
         </h1>
-        <p className="text-gray-600 text-lg">Customize your personal PeopleOS experience</p>
+        <p className="text-gray-600 text-lg">Customize your personal BiggWork experience</p>
       </div>
 
       <div className="space-y-6">

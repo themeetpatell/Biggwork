@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Starting PeopleOS development servers..."
+echo "🚀 Starting BiggWork development servers..."
 
 # Check if .env files exist
 if [ ! -f "backend/.env" ]; then

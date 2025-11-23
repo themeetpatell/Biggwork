@@ -4,7 +4,7 @@ export class TeamFitMap {
   }
 
   loadTeamData() {
-    const saved = localStorage.getItem('peopleos_team_map')
+    const saved = localStorage.getItem('biggwork_team_map')
     if (saved) return JSON.parse(saved)
 
     return {
@@ -66,7 +66,7 @@ export class TeamFitMap {
   }
 
   saveTeamData() {
-    localStorage.setItem('peopleos_team_map', JSON.stringify(this.teamData))
+    localStorage.setItem('biggwork_team_map', JSON.stringify(this.teamData))
   }
 
   analyzeTeamComposition() {

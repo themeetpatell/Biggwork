@@ -50,7 +50,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     // Load saved company data from localStorage
-    const saved = localStorage.getItem('peopleos_company')
+    const saved = localStorage.getItem('biggwork_company')
     if (saved) {
       const data = JSON.parse(saved)
       setCompanyData(data)
@@ -63,7 +63,7 @@ export default function Dashboard() {
   }, [])
 
   const handleSaveCompany = () => {
-    localStorage.setItem('peopleos_company', JSON.stringify(companyData))
+    localStorage.setItem('biggwork_company', JSON.stringify(companyData))
     scanDNA()
   }
 

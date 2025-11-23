@@ -1,4 +1,4 @@
-# PeopleOS - Technical Architecture
+# BiggWork - Technical Architecture
 
 ## 🏗️ System Architecture Overview
 
